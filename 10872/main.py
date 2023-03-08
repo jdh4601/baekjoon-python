@@ -1,0 +1,11 @@
+import sys
+sys.stdin = open("input.txt", "r")
+n = int(sys.stdin.readline())  # 10
+
+def my_factorial(n):
+    if(n > 1):
+        return n * my_factorial(n - 1)
+    else:
+        return 1
+
+print(my_factorial(n))
